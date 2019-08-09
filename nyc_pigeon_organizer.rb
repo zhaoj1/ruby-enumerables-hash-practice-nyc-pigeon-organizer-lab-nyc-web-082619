@@ -4,8 +4,8 @@ def nyc_pigeon_organizer(data)
   data.each do |descriptors, descriptions|
     descriptions.each do |description, names|
       names.each do |name|
-        new_data[name] ||= {}
-        new_data[name][descriptors] ||= []
+        new_data[name] || new_data[name] = {}
+        new_data[name][descriptors] || new_data[name][descriptors] = []
         new_data[name][descriptors] << description.to_s
       end
     end
