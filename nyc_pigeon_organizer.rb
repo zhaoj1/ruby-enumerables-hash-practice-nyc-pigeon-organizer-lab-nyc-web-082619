@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         new_data[name] = {}
         new_data[name][descriptor] = {}
-        new_data[name][descriptor]
+        new_data[name][descriptor] << 
       end
     end
   end
