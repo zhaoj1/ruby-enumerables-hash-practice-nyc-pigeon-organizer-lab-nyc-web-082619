@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   actual_descriptions = descriptors.keys
   names = actual_descriptions.keys
   
-  data.each_with_object({}) { |str, hsh|
+  data.each_with_object({}) { |str, hsh| hsh(str)
     
   }
   
