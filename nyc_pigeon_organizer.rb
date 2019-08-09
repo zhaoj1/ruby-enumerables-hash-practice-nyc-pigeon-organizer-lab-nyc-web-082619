@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   new_data = {}
 
-  data.each do ||
+  data.each do |descriptor, description|
   
 end
 
