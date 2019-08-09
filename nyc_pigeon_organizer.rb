@@ -1,14 +1,11 @@
 def nyc_pigeon_organizer(data)
-  new_data = {}
 
-  data.each do |descriptors, descriptions|
-    descriptions.each do |description, names|
-      names.each do |name|
-        new_data[name] ||= {}
-        new_data[name][descriptors] ||= {}
-        new_data[name][descriptors] << description.to_s
-      end
+   data.each do |trait, options|
+     options.each do |option, pigeons|
+       pigeons.each do |pigeon|
+         organized[pigeon] ||= {}
+         organized[pigeon][trait] ||= []
+         organized[pigeon][trait] << option.to_s
     end
   end
-  new_data
 end
