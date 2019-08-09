@@ -4,8 +4,18 @@ def nyc_pigeon_organizer(data)
   actual_descriptions = descriptors.keys
   names = actual_descriptions.keys
   
-  names.each do |name|
-    
+  descriptors.each do |descr|
+    descriptions.each do |descn|
+      names.each do |name|
+        new_data = {
+          name => {
+            descr => {
+              descn
+            }
+          }
+        }
+      end
+    end  
   end
   
 end
